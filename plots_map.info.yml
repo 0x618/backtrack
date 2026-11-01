@@ -1,0 +1,5 @@
+name: PLOTS Map
+type: module
+description: Provides a map front-end for ArcGIS data served by NDGF.
+package: Custom
+core_version_requirement: ^11

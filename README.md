@@ -9,7 +9,9 @@ Download the module source code:
 1. Clone this repo into your Drupal site's modules/custom directory
 
 ```bash
-git clone https://github.com/0x618/backtrack
+# This is the default drupal 11 install custom modules path. Create the modules/custom folder if it doesn't exist, and ensure your user has write permissions
+cd /var/www/drupal/web/modules/custom
+git clone https://github.com/0x618/backtrack plots_map
 ```
 
 2. Within the Drupal Admin UI, navigate to **Extend**, search for "PLOTS", then check the box to enable the custom PLOTS Map module.

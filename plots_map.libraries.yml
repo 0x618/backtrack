@@ -1,0 +1,11 @@
+map:
+  css:
+    theme:
+      https://js.arcgis.com/5.1/@arcgis/core/assets/esri/themes/dark/main.css:
+        type: external
+      css/plots-map.css: {}
+  js:
+    js/plots-map.js: {}
+  dependencies:
+    - core/drupal
+    - core/once
