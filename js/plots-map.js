@@ -80,7 +80,8 @@
           latitude: 46.80432,
         },
         symbol: {
-          type: 'diamond',
+          type: 'simple-marker',
+          shape: 'x',
           color: '#84d400',
           size: 14,
           outline: { color: '#212529', width: 1.5 },
