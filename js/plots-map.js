@@ -80,10 +80,10 @@
           latitude: 46.80432,
         },
         symbol: {
-          type: 'simple-marker',
+          type: 'diamond',
           color: '#84d400',
-          size: 12,
-          outline: { color: '#212529', width: 1 },
+          size: 14,
+          outline: { color: '#212529', width: 1.5 },
         },
         attributes: {
           name: ' 10/25/2026 - Pheasant #3 ',
