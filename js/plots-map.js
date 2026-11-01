@@ -81,7 +81,7 @@
         },
         symbol: {
           type: 'simple-marker',
-          shape: 'x',
+          style: 'cross',
           color: '#84d400',
           size: 14,
           outline: { color: '#212529', width: 1.5 },
