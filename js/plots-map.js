@@ -81,9 +81,9 @@
         },
         symbol: {
           type: 'simple-marker',
-          style: 'cross',
+          style: 'circle',    // non-circle shapes do not cooperate
           color: '#84d400',
-          size: 14,
+          size: 13,
           outline: { color: '#212529', width: 1.5 },
         },
         attributes: {
