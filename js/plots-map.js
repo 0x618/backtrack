@@ -71,30 +71,49 @@
         },
       });
 
-      // Add waypoint map layer and first waypoint
-      const waypointLayer = new GraphicsLayer.default({ title: 'Pheasant Hunts' });
-      waypointLayer.add(new Graphic.default({
-        geometry: {
-          type: 'point',
+      // Waypoint details object array
+      const waypoints = [
+        {
+          longitude: -100.14033,
+          latitude: 47.05918,
+          name: '10/17/2026 - Pheasant #2',
+          notes: 'Lots of activity in surrounding PLOTS land. This lot has parking to the south and a close dwelling on the east side, but there\'s great habitat running the entire west side of the lot. Might be good late season. Saw 2 older males, harvested 1.',
+          success: true
+        },
+        {
           longitude: -101.60223,
           latitude: 46.80432,
-        },
-        symbol: {
-          type: 'simple-marker',
-          style: 'circle',    // non-circle shapes do not cooperate
-          color: '#84d400',
-          size: 13,
-          outline: { color: '#212529', width: 1.5 },
-        },
-        attributes: {
-          name: ' 10/25/2026 - Pheasant #3 ',
+          name: '10/25/2026 - Pheasant #3',
           notes: 'Good access and well off the highway. Walked around dusk; lots of male pheasants. Several shots taken, one harvested.',
-        },
-        popupTemplate: {
-          title: '{name}',
-          content: '{notes}',
-        },
-      }));
+          success: true
+        }
+      ];
+      // Loop through Waypoint data array to add each to the waypointLayer
+      const waypointLayer = new GraphicsLayer.default({ title: 'Pheasant Hunts' });
+      waypoints.forEach((waypoint) => {
+        waypointLayer.add(new Graphic.default({
+          geometry: {
+            type: 'point',
+            longitude: waypoint.longitude,
+            latitude: waypoint.latitude,
+          },
+          symbol: {
+            type: 'simple-marker',
+            style: 'circle',
+            color: waypoint.success ? '#84d400' : '#ff3b30',      // Green for a successful hunt with at least one harvest, red for no harvest
+            size: 13,
+            outline: { color: '#212529', width: 1.5 },
+          },
+          attributes: {
+            name: waypoint.name,
+            notes: waypoint.notes,
+          },
+          popupTemplate: {
+            title: '{name}',
+            content: '{notes}',
+          },
+        }));
+      });
 
       const map = new Map.default({
         basemap: new Basemap.default({
