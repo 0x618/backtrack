@@ -72,13 +72,28 @@
       });
 
       // Waypoint details object array
+      // Success value determines waypoint color
       const waypoints = [
+        {
+          longitude: -101.05046,
+          latitude: 48.13725,
+          name: '10/10/2026 - Pheasant #1',
+          notes: 'Beck farm land. Fair number of pheasants on the road around dawn, but fewer than previous years. Saw several in the tree rows south on the farm, mostly females. Harvested 1 rooster by the road on the North edge of the farm.',
+          success: true
+        },
         {
           longitude: -100.14033,
           latitude: 47.05918,
           name: '10/17/2026 - Pheasant #2',
           notes: 'Lots of activity in surrounding PLOTS land. This lot has parking to the south and a close dwelling on the east side, but there\'s great habitat running the entire west side of the lot. Might be good late season. Saw 2 older males, harvested 1.',
           success: true
+        },
+        {
+          longitude: -101.61068,
+          latitude: 46.8358,
+          name: '10/24/2026 - None',
+          notes: 'Sighted several male pheasants, 2 grouse. No shots taken.',
+          success: false
         },
         {
           longitude: -101.60223,
@@ -100,7 +115,7 @@
           symbol: {
             type: 'simple-marker',
             style: 'circle',
-            color: waypoint.success ? '#84d400' : '#ff3b30',      // Green for a successful hunt with at least one harvest, red for no harvest
+            color: waypoint.success ? '#84d400' : '#ff3b30',
             size: 13,
             outline: { color: '#212529', width: 1.5 },
           },
