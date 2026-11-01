@@ -57,6 +57,7 @@
       const plotsLayer = new FeatureLayer.default({
         url: `${serviceUrl}/19`,
         title: 'NDGF PLOTS',
+        opacity: 0.6,
         popupTemplate: {
           title: '{Unit_Name}',
           content: [{
