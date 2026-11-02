@@ -79,28 +79,28 @@
           longitude: -101.05046,
           latitude: 48.13725,
           name: '10/10/2026 - Pheasant #1',
-          notes: 'Beck farm land. Fair number of pheasants on the road around dawn, but fewer than previous years. Saw several in the tree rows south on the farm, mostly females. Harvested 1 rooster by the road on the North edge of the farm.',
+          notes: 'Family farm land. Fair number of pheasants on the road around dawn, but fewer than previous years. Saw several in the tree rows south on the farm, mostly hens. Harvested 1 rooster by the road on the North edge of the farm.',
           success: true
         },
         {
           longitude: -100.14033,
           latitude: 47.05918,
           name: '10/17/2026 - Pheasant #2',
-          notes: 'Lots of activity in surrounding PLOTS land. This lot has parking to the south and a close dwelling on the east side, but there\'s great habitat running the entire west side of the lot. Might be good late season. Saw 2 older males, harvested 1.',
+          notes: 'Lots of activity in surrounding PLOTS land. This lot has parking to the south and a close dwelling on the east side, but there\'s great habitat running the entire west side of the lot. Might be good late season. Saw 2 older roosters, harvested 1.',
           success: true
         },
         {
           longitude: -101.61068,
           latitude: 46.8358,
           name: '10/24/2026 - None',
-          notes: 'Sighted several male pheasants, 2 grouse. No shots taken.',
+          notes: 'Sighted several roosters, 2 grouse. No shots taken.',
           success: false
         },
         {
           longitude: -101.60223,
           latitude: 46.80432,
           name: '10/25/2026 - Pheasant #3',
-          notes: 'Good access and well off the highway. Walked around dusk; lots of male pheasants. Several shots taken, one harvested.',
+          notes: 'Good access and well off the highway. Walked around dusk; lots of roosters. Several shots taken, one harvested.',
           success: true
         }
       ];
